@@ -1,7 +1,7 @@
 from turtle import *
 
 POSITIONS = [(0,0), (-20,0), (-40,0)] 
-MOVE_DIST = 20
+MOVE_DIST = 25
 UP = 90
 DOWN = 270
 LEFT = 180
@@ -12,6 +12,7 @@ class Snake:
     def __init__(self):
         self.segments = []
         self.create_snake()
+        self.segments[0].color("purple")  # Set the color of the snake head
 
 #snake shape being created with 3 squares of dimensions 20x20
     def create_snake(self):

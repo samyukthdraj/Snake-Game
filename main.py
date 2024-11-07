@@ -43,5 +43,10 @@ while game_on:
             game_on = False
             scoreboard.game_over()
 
+def close_game():
+    screen.bye()
 
-screen.exitonclick()
+screen.listen()
+screen.onkey(close_game, "Escape")
+#keep the main window open
+screen.mainloop()
